@@ -2,7 +2,7 @@
 const fs = require('fs/promises');
 const path = require('path');
 const { URL } = require('url');
-const pLimit = require('p-limit');
+const pLimit = require('p-limit').default;
 const puppeteer = require('puppeteer');
 
 function log(level, module, msg) {
