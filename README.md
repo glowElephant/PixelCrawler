@@ -11,15 +11,23 @@
 
 ## 설치
 Node.js 18 이상에서 동작합니다.
+
+### 전역 설치(배포 버전)
+패키지가 npm에 배포되어 있다면 아래와 같이 설치 후 `snap` 명령을 사용할 수 있습니다.
 ```bash
 npm install -g pixelcrawler
 ```
 
-리포지토리로부터 직접 실행하려면:
+### 로컬 리포지토리에서 사용
+소스 코드를 직접 클론한 경우 `npm link`(또는 `npm install -g .`)으로 전역 명령을 등록해야 `snap`을 사용할 수 있습니다.
 ```bash
 git clone <repo-url>
 cd PixelCrawler
 npm install
+npm link      # "snap" 명령 전역 등록
+snap "https://예시도메인/page"
+
+# 전역 등록 없이 한 번만 실행하려면
 npm start -- "https://예시도메인/page"
 ```
 
