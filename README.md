@@ -15,6 +15,14 @@ Node.js 18 이상에서 동작합니다.
 npm install -g pixelcrawler
 ```
 
+리포지토리로부터 직접 실행하려면:
+```bash
+git clone <repo-url>
+cd PixelCrawler
+npm install
+npm start -- "https://예시도메인/page"
+```
+
 ## 사용 예시
 단일 URL 스냅샷:
 ```bash
